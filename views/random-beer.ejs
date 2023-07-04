@@ -1,0 +1,15 @@
+ <div class="card">
+   <img class="card-img-top" src="<%=image_url %>" alt="<%= name %>" />
+   <div class="card-body">
+     <h5 class="card-title"><%= name %></h5>
+     <h3 class="card-tagline"> <%= tagline %></h3>
+     <p class="card-text"><%= description %></p>
+     <p> Food Pairing</p>
+     <ul>
+       <% food_pairing.forEach((pairing) => { %>
+       <li> <%= pairing %></li>
+       <% }) %>
+     </ul>
+     <p class="card-text"><%= brewers_tips %></p>
+   </div>
+ </div>
